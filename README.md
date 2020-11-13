@@ -1,6 +1,8 @@
 # Project-1: Expense Reimbursement System (ERS) 
 
 ## User stories:
+
+#### Employee Privileges 
 - An Employee can login
 - An Employee can view the Employee Homepage
 - An Employee can logout
@@ -12,6 +14,7 @@
 - An Employee can update their information
 - An Employee receives an email when one of their reimbursement requests is resolved (optional)
 
+#### Manager Privileges
 - A Manager can login
 - A Manager can view the Manager Homepage
 - A Manager can logout
@@ -28,5 +31,6 @@
 - JDBC
 - SQL
 - Servlet
-- HTML/JS/CSS
+- HTML/JS/CSS and/or Bootstrap
 - JUnit
+- log4J
