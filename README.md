@@ -8,12 +8,13 @@
 * Finance managers are authorized to approve and deny requests for expense reimbursement.
 
 #### Tech Stack
-- Java 8
-- Servlets
-- Hibernate
-- PostgreSQL
-- Amazon EC2
-- Docker
+Java 8, Servlet API, Apache Tomcat, Hibernate, PostgreSQL, HTML, CSS, JavaScript, Amazon EC2, Docker
+
+* The back-end system shall use Hibernate which manages a connection to an **AWS RDS Postgres database**. 
+* The application shall deploy onto a Tomcat Server, hosted remotely on an EC2. 
+* The middle tier shall use Servlet technology for dynamic Web application development. 
+* The front-end view shall use HTML/JavaScript to make an application that can call server-side components and be styled with CSS. 
+* The middle tier shall follow proper layered architecture, and have reasonable test coverage of the service layer.
 
 #### Employee User Stories 
 - An Employee can login
@@ -57,14 +58,6 @@ Employees must select the type of reimbursement as: LODGING, TRAVEL, FOOD, or OT
 
 **Activity Diagram**
 ![](./imgs/activity.jpg)
-
-## Technical Requirements
-
-* The back-end system shall use Hibernate which manages a connection to an **AWS RDS Postgres database**. 
-* The application shall deploy onto a Tomcat Server, hosted remotely on an EC2. 
-* The middle tier shall use Servlet technology for dynamic Web application development. 
-* The front-end view shall use HTML/JavaScript to make an application that can call server-side components and be styled with CSS. 
-* The middle tier shall follow proper layered architecture, and have reasonable test coverage of the service layer.
 
 **Stretch Goals:** *These will count for extra credit and are entirely optional*
 * Users can upload a document or image of their receipt when submitting reimbursements which can stored in the database and reviewed by a financial manager.
