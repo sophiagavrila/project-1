@@ -13,7 +13,7 @@ Java 8, Servlet API, Apache Tomcat, Hibernate, PostgreSQL, HTML, CSS, JavaScript
 * The back-end system shall use Hibernate which manages a connection to an **AWS RDS Postgres database**. 
 * The application shall deploy onto a Tomcat Server, hosted remotely on an EC2. 
 * The middle tier shall use Servlet technology for dynamic Web application development. 
-* The front-end view shall use HTML/JavaScript to make an application that can call server-side components and be styled with CSS. 
+* The front-end view shall use HTML/CSS/JavaScript to make an application that can call server-side components and be styled with CSS. 
 * The middle tier shall follow proper layered architecture, and have reasonable test coverage of the service layer.
 
 #### Employee User Stories 
