@@ -1,5 +1,5 @@
 # Project-1: Employee Reimbursment System (ERS)
-*Due ________________*
+*Due Tuesday July 5th*
 
 ## Executive Summary
 * The Expense Reimbursement System (ERS) will manage the process of reimbursing employees for expenses incurred while on company time. 
@@ -7,12 +7,20 @@
 * Finance managers can log in and view all reimbursement requests and past history for all employees in the company. 
 * Finance managers are authorized to approve and deny requests for expense reimbursement.
 
+#### Tech Stack
+- Java 8
+- Servlets
+- Hibernate
+- PostgreSQL
+- Amazon EC2
+- Docker
+
 #### Employee User Stories 
 - An Employee can login
 - An Employee can view the Employee Homepage
 - An Employee can logout
 - An Employee can submit a reimbursement request
-- An Employee can upload an image of his/her receipt as part of the reimbursement request (extra credit)
+- An Employee can upload an image of his/her receipt as part of the reimbursement request (stretch goal)
 - An Employee can view their pending reimbursement requests
 - An Employee can view their resolved reimbursement requests
 - An Employee can view their information
@@ -52,13 +60,12 @@ Employees must select the type of reimbursement as: LODGING, TRAVEL, FOOD, or OT
 
 ## Technical Requirements
 
-* The back-end system shall use `JDBC` connect to an **AWS RDS Postgres database**. 
-* The application shall deploy onto a Tomcat Server. 
+* The back-end system shall use Hibernate which manages a connection to an **AWS RDS Postgres database**. 
+* The application shall deploy onto a Tomcat Server, hosted remotely on an EC2. 
 * The middle tier shall use Servlet technology for dynamic Web application development. 
-* The front-end view shall use HTML/JavaScript to make an application that can call server-side components. 
-* The middle tier shall follow proper layered architecture, have reasonable test coverage of the service layer, and implement **log4j** for appropriate logging. 
+* The front-end view shall use HTML/JavaScript to make an application that can call server-side components and be styled with CSS. 
+* The middle tier shall follow proper layered architecture, and have reasonable test coverage of the service layer.
 
 **Stretch Goals:** *These will count for extra credit and are entirely optional*
 * Users can upload a document or image of their receipt when submitting reimbursements which can stored in the database and reviewed by a financial manager.
 * Passwords shall be encrypted in Java and securely stored in the database. 
-* Application shall be hosted remotely on an EC2.
